@@ -8,3 +8,4 @@ try:
 except (keyError,FileNoteFound):  
   st.error("API key is missing. Add it in Advanced Settings")
   st.stop()
+  role = st.selection('Job.Title',['machine learning','prompt engineer','devops engineer'])
