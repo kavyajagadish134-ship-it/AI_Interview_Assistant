@@ -57,7 +57,7 @@ if st.button("Generate AI Respons",type="primary"):
                 st.subheader("AI Response")
                 st.markdown(output)
                 st.downlode_dutton("Download Response", output , file_name = "Interview_Response.txt",mime = 'text/plain')
-        except Exception as e:
+            except Exception as e:
                     st.error("API commection was unsuccessful :",e)
                     st.info("Please check your API key and rate limits")
-        st.caption("Powered by Streamlit.io and GitHub.Using LLM API")
+                st.caption("Powered by Streamlit.io and GitHub.Using LLM API")
