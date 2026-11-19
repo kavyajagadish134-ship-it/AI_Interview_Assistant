@@ -40,7 +40,7 @@ else:
     question = st.text_area("Enter Interview Question Here")
     answer = st.text_area("Enter Your Answer", height=160)
     if st.button("Generate AI Respons",type="primary"):
-        if mode == (["Evaluate Answers","Improve Answer"]and(not question.strip()) or (not answer.strip())):
+        if mode == (["Evaluate Answers","Improve Answers"]and(not question.strip()) or (not answer.strip())):
             st.warning("please enter a valid question and answer")
             st.stop()
         topics == "Topics is" + topic + "Difficulty is" + level
