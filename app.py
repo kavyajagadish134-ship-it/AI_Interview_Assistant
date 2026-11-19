@@ -48,14 +48,14 @@ else:
            task == "Generate" + str(count) + "Frequently asked Interview Questions 3 theory and 2 logical Question. Donot give answers.give hints."
         elif mode  == "Generate Code Questions":
             task == "Generate"+ str(count) + "Frequently asked  coding questions on topicon topic "+topic+"and give hints to slove them.Be accurate."
-         elif mode =="Evaluate Answers":
+        elif mode =="Evaluate Answers":
             task == " Question : " +question+ "My Answer :" +amnswer+ "Evaluate Answers."
-           elif mode =="Improve Answers"
-              task == " Question : " +question+ "My Answer :" +amnswer+ "Improve Answers."
-              background =="Job role : "+role+ "Difficulty level" + level
-        with st.spinner("Genrating your answer ....."):
-            try:
-              response = client.chat.completions.create(
+        elif mode =="Improve Answers"
+            task == " Question : " +question+ "My Answer :" +amnswer+ "Improve Answers."
+            background =="Job role : "+role+ "Difficulty level" + level
+            with st.spinner("Genrating your answer ....."):
+              try:
+                 response = client.chat.completions.create(
                   model="openai/gpt-oss-120b",
                   messages=[{"role":"system","content":"You are an expert Technical Interviewer"},
                             {
