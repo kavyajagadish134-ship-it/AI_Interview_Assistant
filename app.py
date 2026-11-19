@@ -43,9 +43,9 @@ else:
         if mode == (['Evaluate Answers','Improve Answer']and(not question.strip()) or (not answer.strip())):
             st.warning("please enter a valid question and answer")
             st.stop()
-        topics = "Topics is" + topic + "Difficulty is" + level
-        if mode = "Generate Question":
-           task = "Generate" + str(count) + "Frequently asked Interview Questions 3 theory and 2 logical Question. Donot give answers.give hints."
+        topics == "Topics is" + topic + "Difficulty is" + level
+        if mode == "Generate Question":
+           task == "Generate" + str(count) + "Frequently asked Interview Questions 3 theory and 2 logical Question. Donot give answers.give hints."
         elif mode  == "Generate Code Questions":
             task == "Generate"+ str(count) + "Frequently asked  coding questions on topicon topic "+topic+"and give hints to slove them.Be accurate."
          elif mode =="Evaluate Answers":
